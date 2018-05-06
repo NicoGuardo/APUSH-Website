@@ -10,15 +10,16 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<style>
 			body {
-				background-color: #b3ffb3;
+				background-color: #ccd8ff;
 			}
 			h1 {
-				margin-left: 50px;
-				margin-top: 50px;
+			    margin: 0px;
+				padding-top: 10px;
 				padding-bottom: 10px;
 				font-weight: bold;
 			}
 			hr {
+				margin: 0px;
 				border-color: black;
 			}
 			p {
@@ -26,6 +27,12 @@
 			}
 			a {
 				margin-left: 50px;
+			}
+			.panel-group {
+				margin: 0px;
+			}
+			.panel-heading {
+				padding-left: 0px;
 			}
 			.form {
 				padding-top: 10px;
@@ -52,21 +59,6 @@
 				padding-bottom: 3px;
 				padding-left: 3px;
 			}
-			.panel {
-				padding-bottom: 0px;
-			}
-			.panel-group {
-				padding-bottom: 0px;
-			}
-			.panel-default {
-				padding-bottom: 0px;
-			}
-			.panel-title {
-				padding-bottom: 0px;
-			}
-			.panel-collapse {
-				padding-bottom: 0px;
-			}
 			a:link {
 				text-decoration: none;
 			}
@@ -83,72 +75,105 @@
 		</style>
 	</head>	
 	<body>
-		<h1>APUSH Review Timeline</h1>
+		<div style="background-color:red;"><br/></div>
+		<h1 style="background-color:white;text-align:center;">APUSH Review Timeline</h1>
+		<div style="background-color:blue;"><br/></div>
+		<br/>
 		
 		<!-- What is going on? -->
 		<div>
 			<a href="#first" class="dataOne" data-toggle="collapse">What is going on?</a>
 			<div id="first" class="collapse">
-				<div style="padding-top: 10px;padding-left:50px;">
+				<div style="padding-top:10px;padding-left:50px;">
 					Basically a timeline explaining a lot of the major things that happened in every time period.<br/>
 					If the panel is marked with an (*) asterisk, then it can be expanded.
 				</div>
 			</div>
 		</div>
 		
+		<br>
 		<hr>
+		<br>
 		
-		<!-- Early-1800 -->
-		<div style="padding:6px;">
-			<a href="#early-1800" class="data" data-toggle="collapse">Early-1800</a>
-			<div id="early-1800" class="collapse">
+		<!-- Early-1762 -->
+		<div style="padding-top:6px;padding-bottom:6px;">
+			<a href="#early-1762" class="data" data-toggle="collapse">Early-1762</a>
+			<div id="early-1762" class="collapse">
 				<div class="panel-group">
-					<div style="padding-top:10px;">
-						<div id="accordion">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-parent="#accordion">Christoper Columbus "discovers" America in August, 1492</a>
-									</h4>
-								</div>
+					<div style="padding-top:10px;" id="cherry">
+					    <div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#cherry">Christoper Columbus "discovers" America in August of 1492</a>
+								</h4>
 							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-parent="#accordion">Founding of Jamestown in 1607</a>
-									</h4>
-								</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#cherry" href="#treatyTordesillas">Treaty of Tordesillas (1494)*</a>
+								</h4>
 							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-parent="#accordion">Salutary Neglect ends after Seven Years' War in 1763</a>
-									</h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#landOrdinance">Land Ordinance of 1785*</a>
-									</h4>
-								</div>
-								<div id="landOrdinance" class="collapse">
-									<div class="panel-collapse">
-										<div class="form">
-											The Land Ordinance of 1785 ended the disputes between the states, created townships, expanded U.S. territory, and gave settlers land.
-										</div>
+							<div id="treatyTordesillas" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Treaty of Tordesillas was between Portugal and Spain, and it declared that newly discovered lands to the west of an imaginary line in the Atlantic Ocean would belong to Spain and newly discovered lands to the east of the line would belong to Portugal.
 									</div>
 								</div>
 							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#northwestOrdinance">Northwest Ordinance of 1787*</a>
-									</h4>
-								</div>
-								<div id="northwestOrdinance" class="panel-collapse collapse">
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#cherry">Founding of Jamestown in 1607</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#cherry">Navigation Acts start being passed by Parliament in 1651</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#cherry" href="#treatyUtrecht">Treaty of Utrecht (1713)*</a>
+								</h4>
+							</div>
+							<div id="treatyUtrecht" class="collapse">
+								<div class="panel-collapse">
 									<div class="form">
-										The Northwest Ordinance of 1787 defined the process by which new states could be admitted into the Union from the Northwest Territory. The ordinance forbade slavery in the territory but allowed citizens to vote on the legality of slavery once statehood had been established. The Northwest Ordinance was the most lasting measure of the national government under the Articles of Confederation.
+										The Treaty of Utrecht ended Queen Ann's War and transferred large areas of French territory in North America to the English, including Nova Scotia and Newfoundland.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#cherry" href="#greatawakening">Great Awakening (1730s)*</a>
+								</h4>
+							</div>
+							<div id="greatawakening" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Great Awakening emphasized ritual, doctrine, and a more emotional attachment to religion. It stressed God as a creator of a perfectly ordered universe where one could learn about him through nature. It placed less emphasis on human sinfulness and damnation.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#cherry" href="#stonorebellion">Stono Rebellion (1739)*</a>
+								</h4>
+							</div>
+							<div id="stonorebellion" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Stono Rebellion was the most serious slave rebellion in the the colonial period in South Carolina. One hundred African Americans got weapons, killed several whites, then tried to escape to southern Florida. The uprising was crushed and the participants executed. The main form of rebellion was running away, though there was no where to go.
 									</div>
 								</div>
 							</div>
@@ -157,10 +182,174 @@
 				</div>
 			</div>
 		</div>
-		<!-- 1800-1860 -->
-		<div style="padding:6px;">
-			<a href="#1800-1860" class="data" data-toggle="collapse">1800-1860</a>
-			<div id="1800-1860" class="collapse">
+		<!-- 1763-1800 -->
+		<div style="padding-top:6px;padding-bottom:6px;">
+			<a href="#1763-1800" class="data" data-toggle="collapse">1763-1800</a>
+			<div id="1763-1800" class="collapse">
+				<div class="panel-group">
+					<div style="padding-top:10px;" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">Salutary Neglect ends after Seven Years' War in 1763</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#proclamation1763">Proclamation of 1763*</a>
+								</h4>
+							</div>
+							<div id="proclamation1763" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Proclamation of 1763 from the British government forbade British colonists from settling west of the Appalacian Mountains and required any settlers already living west of the mountains to move back east.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">Stamp Act Congress gathers in New York City in 1765</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">Boston Massacre on March 5, 1770</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">Boston Tea Party in Boston Harbor on December 16, 1773</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">First Continental Congress meets in Philadelphia in 1774</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">Declaration of Independence signed on July 4, 1774</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#landOrdinance">Land Ordinance of 1785*</a>
+								</h4>
+							</div>
+							<div id="landOrdinance" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Land Ordinance of 1785 ended the disputes between the states, created townships, expanded U.S. territory, and gave settlers land.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#northwestOrdinance">Northwest Ordinance of 1787*</a>
+								</h4>
+							</div>
+							<div id="northwestOrdinance" class="collapse">
+							    <div class="panel-collapse">
+							    	<div class="form">
+								    	The Northwest Ordinance of 1787 defined the process by which new states could be admitted into the Union from the Northwest Territory. The ordinance forbade slavery in the territory but allowed citizens to vote on the legality of slavery once statehood had been established. The Northwest Ordinance was the most lasting measure of the national government under the Articles of Confederation.
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#federalistpapers"><i>The Federalist</i> Papers (1788)*</a>
+								</h4>
+							</div>
+							<div id="federalistpapers" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										<i>The Federalist</i> papers were a collection of essays written by Alexander Hamilton, John Jay, and James Madison explaining how the new government and constitution would work. The purpose was to convince the New York state legislature to ratify the Constitution, which it did.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">George Washington becomes first president on April 30, 1789</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#farewelladdress">George Washington's Farewell Address (1796)*</a>
+								</h4>
+							</div>
+							<div id="farewelladdress" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Farewell Address stressed that the U.S. should stay away from permanent alliances with foreign countries. Temporary alliances wouldn't be quite as dangerous, but even so then they should be made only in "extraordinary emergencies." Washington also spoke against partisan bitterness. This document was rejected by the Jeffersonians, who favored the alliance with France.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#kandvres">Kentucky and Virginia Resolutions (1798)*</a>
+								</h4>
+							</div>
+							<div id="kandvres" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+									    The Kentucky and Virginia Resolutions were put into practice by Jefferson and Madison. These were secretly made to get the rights taken away with the Alien and Sedition Acts back. These also brought about the later compact theory which gave the states more power than the federal government.
+							    	</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#xyzaffair">XYZ Affair (1798)*</a>
+								</h4>
+							</div>
+							<div id="xyzaffair" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+										In the XYZ Affair, a commission had been sent to France in 1797 to discuss the disputes that had arisen out of the U.S. refusal to honor the Franco-American Treaty of 1778. Adams sent delegates to meet with French foreign minister Talleyrand in the hopes of working things out. Talleyrand's three agents told the American delegates that they could meet with Talleyrand only in exchange for a very large bribe. The Americans did not pay the bribe, and in 1798 Adams made the incident public, substituting the letters "X, Y and Z" for the names of the three French agents in his report to Congress.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#accordion">Failed Gabriel's Rebellion in 1800</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 1801-1860 -->
+		<div style="padding-top:6px;padding-bottom:6px;">
+			<a href="#1801-1860" class="data" data-toggle="collapse">1801-1860</a>
+			<div id="1801-1860" class="collapse">
 				<div class="panel-group">
 					<div style="padding-top:10px;" id="pudding">
 						<div class="panel panel-default">
@@ -177,14 +366,161 @@
 								</h4>
 							</div>
 						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#embargoact1807">Embargo Act of 1807*</a>
+								</h4>
+							</div>
+							<div id="embargoact1807" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+									    The Embargo Act of 1807 forbade all exportation of goods from the United States. Britain and France had been continuously harassing the U.S. and seizing U.S. ships and men. Since the U.S. was not prepared to fight in a war, Jefferson hoped to weaken Britain and France by stopping trade. The act ended up hurting our economy more than theirs and was repealed in 1809. It eventually led to the War of 1812.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding">Robert Fulton directs the construction of steamboat in New York in 1807</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#adamsonis">Adams–Onís Treaty of 1819*</a>
+								</h4>
+							</div>
+							<div id="adamsonis" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										Also known as Transcontinental Treaty, the Adams–Onís Treaty of 1819 purchased Florida from Spain. It established a western boundary for U.S. and prevented Seminoles from invading Georgia.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#corruptbargain">Corrupt Bargain (1824)*</a>
+								</h4>
+							</div>
+							<div id="corruptbargain" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Corrupt Bargain was an event during the 1824 presidential election where Henry Clay did behind-the-scenes work in order to secure the victory of John Quincy Adams over Andrew Jackson. This enraged Jackson supporters and would help him win in 1828.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#tariffAbominations">Tariff of Abominations (1828)*</a>
+								</h4>
+							</div>
+							<div id="tariffAbominations" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Tariff of Abominations favored western agricultural interests by raising tariffs or import taxes on imported hemp, wool, fur, flax, and liquor, favoring Northern manufacturers. In the South, these tariffs raised the cost of manufactured goods, angering them and causing more sectionalist feelings.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#indianremovalact">Indian Removal Act of 1830*</a>
+								</h4>
+							</div>
+							<div id="indianremovalact" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Indian Removal Act of 1830 authorized Andrew Jackson to negotiate land-exchange treaties with tribes living east of the Mississippi. The treaties enacted under this act's provisions paved the way for the reluctant (and often forcible) emigration of tens of thousands of American Indians to the West.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#panicof1837">Panic of 1837*</a>
+								</h4>
+							</div>
+							<div id="panicof1837" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										State banks issued paper money and financed wild speculation, especially in federal lands. Jackson issued the Specie Circular to force the payment for federal lands with gold or silver, and many state banks collapsed as a result.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#trailoftears">Trail of Tears (1838)*</a>
+								</h4>
+							</div>
+							<div id="trailoftears" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Trail of Tears was forced relocation of Cherokee Indians. They traveled from North Carolina and Georgia through Tennessee, Kentucky, Illinois, Missouri, and Arkansas (more than 800 miles) to the Indian Territory. More than 4,000 Cherokees died of cold, disease, and lack of food during the 116-day journey.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding">The Irish Potato Famine, also known as the Great Hunger, begins in 1845</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#fugitiveslave">Fugitive Slave Act (1850)*</a>
+								</h4>
+							</div>
+							<div id="fugitiveslave" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Fugitive Slave Act made it a crime to help runaway slaves. It allowed for the arrest of escaped slaves in areas where slavery was illegal and required their return to slaveholders. It was also part of the Compromise of 1850.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding"><i>Uncle Tom's Cabin</i> by Harriet Beecher Stowe published in 1852</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding">John Brown's raid on Harpers Ferry in 1859</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding">South Carolina secedes on December 20, 1860</a>
+								</h4>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>	
-		<!-- 1860-1920 -->
-		<div style="padding:6px;">
-			<a href="#1860-1920" class="data" data-toggle="collapse">1860-1920</a>
-			<div id="1860-1920" class="collapse">
+		<!-- 1861-1920 -->
+		<div style="padding-top:6px;padding-bottom:6px;">
+			<a href="#1861-1920" class="data" data-toggle="collapse">1861-1920</a>
+			<div id="1861-1920" class="collapse">
 				<div class="panel-group">
 					<div style="padding-top:10px;" id="guitar">
 						<div class="panel panel-default">
@@ -193,10 +529,110 @@
 									<a data-toggle="collapse" data-parent="#guitar" href="#homesteadAct">Homestead Act of 1862*</a>
 								</h4>
 							</div>
-							<div id="homesteadAct" class="panel-collapse collapse">
-								<div class="form">
-									The Homestead Act of 1862 reassured western migration by accommodating settlers with 160 acres of public land. In return, homesteaders paid a small fee and were required to complete five years of residence.
+							<div id="homesteadAct" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+									    The Homestead Act of 1862 reassured western migration by accommodating settlers with 160 acres of public land. In return, homesteaders paid a small fee and were required to complete five years of residence.
+								    </div>
 								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#guitar" href="#pacificrailAct">Pacific Railway Act of 1862*</a>
+								</h4>
+							</div>
+							<div id="pacificrailAct" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+										The Pacific Railway Act of 1862 aided in the construction of a railroad and telegraph line from the Missouri River to the Pacific Ocean. It also secured the government's the use of the it for postal, military, and other purposes.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#guitar" href="#shermanMarch">Sherman's March (1864)*</a>
+								</h4>
+							</div>
+							<div id="shermanMarch" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+										William Sherman campaigned his "March to the Sea" from Atlanta to South Carolina where he and his army applied a total warfare and scorched earth policy. It led to over a million dollars in damage and crushed the south.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#guitar" href="#force-acts">Force Acts (1870)*</a>
+								</h4>
+							</div>
+							<div id="force-acts" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+										The government used the Force Acts to ban the use of terror, force, or bribery to prevent someone from voting because of their race. Other laws banned the KKK entirely and brought forth military help to enforce these laws.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#guitar" href="#compromise1877">Compromise of 1877*</a>
+								</h4>
+							</div>
+							<div id="compromise1877" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+										The Compromise of 1877 withdrew federal soldiers from their remaining position in the South, enacted federal legislation that would spur industrialization in the South, appointed Democrats to patronage positions in the south, and appointed Rutherford B. Hayes as president.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">Thomas Edison invents the light bulb in November 1879</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">Railroads create the first time zones on November 18, 1883</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar"><i>How the Other Half Lives</i> by Jacob Riis published in 1890</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">U.S. Army massacres Sioux at Wounded Knee on December 29, 1890</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">George Waring appointed commissioner of the New York Street Cleaning in 1895</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">Hamill Brothers discover oil in Spindletop, Texas on January 10, 1901</a>
+								</h4>
 							</div>
 						</div>
 						<div class="panel panel-default">
@@ -206,16 +642,163 @@
 								</h4>
 							</div>
 						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">Henry Ford creates revolutionary Ford Model T car in Detroit in 1908</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">William Mulholland shows off Los Angeles Aqueduct on November 5, 1913</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">128 Americans die on sinking of Lusitania by German U-Boat on May 7, 1915</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#guitar">Chicago race riot leads to Red Summer in July of 1919</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#guitar" href="#palmerraids">Palmer Raids (1920)*</a>
+								</h4>
+							</div>
+							<div id="palmerraids" class="collapse">
+							    <div class="panel-collapse">
+								    <div class="form">
+										The Palmer Raids were operations coordinated by Attorney General Mitchel Palmer in which federal marshals raided the homes of suspected radicals and the headquarters of radical organization in 32 cities.
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- 1920-Today -->
-		<div style="padding:6px;">
-			<a href="#1920-today" class="data" data-toggle="collapse">1920-Today</a>
-			<div id="1920-today" class="collapse">
+		<!-- 1921-1980 -->
+		<div style="padding-top:6px;padding-bottom:6px;">
+			<a href="#1921-1980" class="data" data-toggle="collapse">1921-1980</a>
+			<div id="1921-1980" class="collapse">
 				<div class="panel-group">
 					<div style="padding-top:10px;" id="banana">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Saint Valentine's Day Massacre on February 14, 1929</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Black Tuesday: stock market crashes on October 29, 1929</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Black Sunday: severe dust storm on April 14, 1935</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Operation Barbarossa: Axis invasion of Soviet Union on June 22, 1941</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Japanese attack on Pearl Harbor on December 7, 1941</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">D-Day Allied invasion of Normandy, France on June 6, 1944</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Hiroshima bombed on August 6, 1945 and Nagasaki bombed on August 9, 1945</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">U-2 spy plane shot down while in Soviet airspace on May 1, 1960</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Failed Bay of Pigs invasion of Cuba by CIA on April 17, 1961</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Cuban Missile Crisis during October of 1962</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Malcolm X is assassinated on February 21, 1965</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Martin Luther King Jr. is assassinated on April 4, 1968</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Woodstock Festival takes place in New York in August of 1969</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Kent State University shootings of four unarmed students on May 4, 1970</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#banana">Watergate incident takes place on June 17, 1972</a>
+								</h4>
+							</div>
+						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
@@ -223,17 +806,27 @@
 								</h4>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 1981-Today -->
+		<div style="padding-top:6px;padding-bottom:6px;">
+			<a href="#1981-today" class="data" data-toggle="collapse">1981-Today</a>
+			<div id="1981-today" class="collapse">
+				<div class="panel-group">
+					<div style="padding-top:10px;" id="sugar">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-									<a data-parent="#banana">Space shuttle Challenger explodes after 73 seconds on January 28, 1986</a>
+									<a data-parent="#sugar">Space shuttle Challenger explodes after 73 seconds on January 28, 1986</a>
 								</h4>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#banana" href="#USApatriot">USA Patriot Act of 2001*</a>
+									<a data-toggle="collapse" data-parent="#sugar" href="#USApatriot">USA Patriot Act of 2001*</a>
 								</h4>
 							</div>
 							<div id="USApatriot" class="collapse">
@@ -249,7 +842,9 @@
 			</div>
 		</div>
 		
+		<br>
 		<hr>
+		<br>
 		
 		<!-- Credits -->
 		<div>
@@ -262,6 +857,8 @@
 			<br/>
 			<a href="https://www.youtube.com/channel/UC223Rd7yCfDo9fv6ENdNp9Q" target="_blank">Adam Norris</a>
 			<br>
+			<br/>
+			<a href="https://apcentral.collegeboard.org/courses/ap-united-states-history/exam" target="_blank">College Board Overview</a>
 			<br/>
 			<div style="margin-left:50px;">If something is wrong or missing, contact me at: <a href style="margin-left:0px">nguardadoguardo@gmail.com</a></div>
 		</div>
