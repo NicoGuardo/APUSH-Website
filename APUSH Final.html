@@ -11,6 +11,7 @@
 		<style>
 			body {
 				background-color: #ccd8ff;
+				margin-bottom: 20px;
 			}
 			h1 {
 			    margin: 0px;
@@ -26,7 +27,11 @@
 				margin-left: 50px;
 			}
 			a {
+			    margin-top: 0px;
+			    margin-bottom: 0px;
 				margin-left: 50px;
+				margin-right: 50px;
+				display: inline-block;
 			}
 			.panel-group {
 				margin: 0px;
@@ -45,19 +50,23 @@
 				margin-left: 50px;
 				border: 2px solid gray;
 				border-radius: 5px;
-				padding-top: 3px;
+				padding-top: 1px;
 				padding-right: 3px;
-				padding-bottom: 3px;
+				padding-bottom: 1px;
 				padding-left: 3px;
 			}
 			.dataOne {
 				margin-left: 50px;
 				border: 2px solid gray;
 				border-radius: 5px;
-				padding-top: 3px;
+				padding-top: 1px;
 				padding-right: 3px;
-				padding-bottom: 3px;
+				padding-bottom: 1px;
 				padding-left: 3px;
+			}
+			.rare {
+			    margin-left: 50px;
+			    margin-right: 50px;
 			}
 			a:link {
 				text-decoration: none;
@@ -72,31 +81,56 @@
 			a:active {
 				text-decoration: none;
 			}
+			@media (max-width: 600px) {
+			    a {
+			        margin-left: 20px;
+			        margin-right: 20px;
+			    }
+			    .rare {
+			        margin-left: 20px;
+			        margin-right: 20px;
+			    }
+			    .data {
+			        margin-left: 20px;
+			        margin-right: 20px;
+			    }
+			    .dataOne {
+			        margin-left: 20px;
+			        margin-right: 20px;
+			    }
+			    .form {
+			        margin-left: 20px;
+			        margin-right: 20px;
+			    }
+			}
 		</style>
 	</head>	
 	<body>
-		<div style="background-color:red;"><br/></div>
-		<h1 style="background-color:white;text-align:center;">APUSH Review Timeline</h1>
-		<div style="background-color:blue;"><br/></div>
-		<br/>
-		
-		<!-- What is going on? -->
+	
+		<!-- Introduction -->
 		<div>
-			<a href="#first" class="dataOne" data-toggle="collapse">What is going on?</a>
-			<div id="first" class="collapse">
-				<div style="padding-top:10px;padding-left:50px;">
-					Basically a timeline explaining a lot of the major things that happened in every time period.<br/>
-					If the panel is marked with an (*) asterisk, then it can be expanded.
+			<div style="background-color:red;"><br/></div>
+			<h1 style="background-color:white;text-align:center;">APUSH Review Timeline</h1>
+			<div style="background-color:blue;"><br/></div>
+			<br/>
+		
+			<!-- What is going on? -->
+			<div>
+				<a href="#first" class="dataOne" data-toggle="collapse">What is going on?</a>
+				<div id="first" class="collapse">
+					<div class="rare" style="padding-top:10px;">
+						Basically a timeline explaining a lot of the major things that happened in every time period.<br/>
+						If the panel is marked with an (*) asterisk, then it can be expanded.
+					</div>
 				</div>
 			</div>
+			<br>
+			<hr>
+			<br>
 		</div>
 		
-		<br>
-		<hr>
-		<br>
-		
 		<!-- Early-1762 -->
-		<div style="padding-top:6px;padding-bottom:6px;">
+		<div style="padding-bottom:6px;">
 			<a href="#early-1762" class="data" data-toggle="collapse">Early-1762</a>
 			<div id="early-1762" class="collapse">
 				<div class="panel-group">
@@ -159,7 +193,7 @@
 							<div id="greatawakening" class="collapse">
 								<div class="panel-collapse">
 									<div class="form">
-										The Great Awakening emphasized ritual, doctrine, and a more emotional attachment to religion. It stressed God as a creator of a perfectly ordered universe where one could learn about him through nature. It placed less emphasis on human sinfulness and damnation.
+										The Great Awakening emphasized ritual, doctrine, and a more emotional attachment to religion. It stressed God as a creator of a perfectly ordered universe where one could learn about Him through nature. It placed less emphasis on human sinfulness and damnation.
 									</div>
 								</div>
 							</div>
@@ -183,7 +217,7 @@
 			</div>
 		</div>
 		<!-- 1763-1800 -->
-		<div style="padding-top:6px;padding-bottom:6px;">
+		<div style="padding-bottom:6px;">
 			<a href="#1763-1800" class="data" data-toggle="collapse">1763-1800</a>
 			<div id="1763-1800" class="collapse">
 				<div class="panel-group">
@@ -275,6 +309,34 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#greatcompromise">Great Compromise (1787)*</a>
+								</h4>
+							</div>
+							<div id="greatcompromise" class="collapse">
+							    <div class="panel-collapse">
+							    	<div class="form">
+								    	The Great Compromise was an agreement between the small (ex. New Jersey) and large (ex. Virginia) states reached in the Constitutional Convention of 1787. In part, it defined the legislative structure and representation that each state would be entitled to in the US Constituton. The bicameral legislature of the senate and congress was reached.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#35compromise">Three-Fifths Compromise (1787)*</a>
+								</h4>
+							</div>
+							<div id="35compromise" class="collapse">
+							    <div class="panel-collapse">
+							    	<div class="form">
+								    	The Three-Fifths Compromise determined that each slave would be counted as three-fifths of a person for the purpose of apportioning taxes and representation. The compromise granted disproportionate political power to southern slave states.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion" href="#federalistpapers"><i>The Federalist</i> Papers (1788)*</a>
 								</h4>
 							</div>
@@ -291,6 +353,20 @@
 								<h4 class="panel-title">
 									<a data-parent="#accordion">George Washington becomes first president on April 30, 1789</a>
 								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#jaytreaty">Jay Treaty (1794)*</a>
+								</h4>
+							</div>
+							<div id="jaytreaty" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Jay Treaty said that Britain was to pay for Americans ships that were seized in 1793. It also said that Americans had to pay British merchants debts owed from before the revolution and that Britain agreed to remove their troops from the Ohio Valley.
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="panel panel-default">
@@ -347,7 +423,7 @@
 			</div>
 		</div>
 		<!-- 1801-1860 -->
-		<div style="padding-top:6px;padding-bottom:6px;">
+		<div style="padding-bottom:6px;">
 			<a href="#1801-1860" class="data" data-toggle="collapse">1801-1860</a>
 			<div id="1801-1860" class="collapse">
 				<div class="panel-group">
@@ -446,13 +522,20 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
+									<a data-parent="#pudding">Nat Turner leads the only effective slave rebellion in Virginia on August 21, 1831</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#pudding" href="#panicof1837">Panic of 1837*</a>
 								</h4>
 							</div>
 							<div id="panicof1837" class="collapse">
 								<div class="panel-collapse">
 									<div class="form">
-										State banks issued paper money and financed wild speculation, especially in federal lands. Jackson issued the Specie Circular to force the payment for federal lands with gold or silver, and many state banks collapsed as a result.
+										The Panic of 1837 occurred when state banks issued paper money and financed wild speculation, especially in federal lands. Jackson issued the Specie Circular to force the payment for federal lands with gold or silver, and many state banks collapsed as a result.
 									</div>
 								</div>
 							</div>
@@ -481,6 +564,69 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#oregontreaty">Oregon Treaty (1846)*</a>
+								</h4>
+							</div>
+							<div id="oregontreaty" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Oregon Treaty established a U.S. and British (now Canadian) border along the 49th parallel which extended from the Rocky Mountains to the Pacific Ocean.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#wilmotproviso">Wilmot Proviso (1846)*</a>
+								</h4>
+							</div>
+							<div id="wilmotproviso" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Wilmot Proviso was proposed after the Mexican-American War. It stated that neither slavery no involuntary servitude shall ever exist in any territory gained from Mexico. It was never passed through both houses, but it transformed the debate of slavery.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding">James W. Marshall discovers gold in California on January 24, 1848</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#treatyguadalupehidalgo">Treaty of Guadalupe Hidalgo (1848)*</a>
+								</h4>
+							</div>
+							<div id="treatyguadalupehidalgo" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Treaty of Guadalupe Hidalgo was a peace treat largely dictated by the U.S. to the government that occupied Mexico City which ended the Mexican-American War. Mexico surrendered to the U.S. and entered negotiation to end the war. The U.S. gained the Mexican Cession, and the Rio Grande river was the southern boundary of the U.S. and Texas.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#compromise1850">Compromise of 1850*</a>
+								</h4>
+							</div>
+							<div id="compromise1850" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Compromise of 1850 was a series of measures by Henry Clay and Stephen Douglas that attempted to resolve the territorial and slavery controversies arising from the Mexican-American War. California was admitted as a free state, the territories in the west would determine the issue of slavery based on popular sovereignty, the slave trade was abolished in Washington, D.C., and the new Fugitive Slave Law was passed. At best this compromise was more of an armistice delaying greater conflict than a compromise.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#pudding" href="#fugitiveslave">Fugitive Slave Act (1850)*</a>
 								</h4>
 							</div>
@@ -502,8 +648,92 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-									<a data-parent="#pudding">John Brown's raid on Harpers Ferry in 1859</a>
+									<a data-toggle="collapse" data-parent="#pudding" href="#gadsenpurchase">Gadsden Purchase (1853)*</a>
 								</h4>
+							</div>
+							<div id="gadsenpurchase" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Gadsden Purchase was a treaty in which the U.S. bought parts of what is now southern Arizona and southern New Mexico—from Mexico. Southerners wanted this land in order to a build southern transcontinental railroad. It also showed the American belief in Manifest Destiny. The heated debate over this issue in the Senate demonstrated the prevalence of sectional disagreement.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#kansasnebraskaact">Kansas-Nebraska Act (1854)*</a>
+								</h4>
+							</div>
+							<div id="kansasnebraskaact" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Kansas-Nebraska Act set up Kansas and Nebraska as states. Each state would use popular sovereignty to decide what to do about slavery. People who were pro-slavery and antislavery moved to Kansas, but some antislavery settlers were against the act. This began guerrilla warfare.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#ostendmanifesto">Ostend Manifesto (1854)*</a>
+								</h4>
+							</div>
+							<div id="ostendmanifesto" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Ostend Manifesto was confidential dispatch to the U.S. State Department from American diplomats meeting in Ostend, Belgium, suggesting that the U.S. would be justified in seizing Cuba if Spain refused to sell. When word of the document leaked, Northern anger boiled at this "slaveholders' plot" to extend slavery.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#lecomptonconstitution">Lecompton Constitution (1857)*</a>
+								</h4>
+							</div>
+							<div id="lecomptonconstitution" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Lecompton Constitution was a pro-slavery constitution written for Kansas' admission to the union in opposition to the anti-slavery Topeka Constitution. It was eventually rejected, and Kansas became a free state in 1861.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#freeportdoctrine">Freeport Doctrine (1858)*</a>
+								</h4>
+							</div>
+							<div id="freeportdoctrine" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Freeport Doctrine was developed by Stephen Douglas, and it said the exclusion of slavery in a territory could be determined by the refusal of the voters to enact any laws that would protect slave property. It was unpopular with Southerners and thus cost him the election.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-parent="#pudding">John Brown leads raid on Harpers Ferry in 1859</a>
+								</h4>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#pudding" href="#crittendencompromise">Crittenden Compromise (1860)*</a>
+								</h4>
+							</div>
+							<div id="crittendencompromise" class="collapse">
+								<div class="panel-collapse">
+									<div class="form">
+										The Crittenden Compromise was an attempt to prevent the Civil War by Senator John J. Crittenden. It offered a Constitutional amendment recognizing slavery in the territories south of the 36º30' line. It also promised noninterference by Congress with existing slavery and compensation to the owners of fugitive slaves. It was defeated by Republicans.
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="panel panel-default">
@@ -518,7 +748,7 @@
 			</div>
 		</div>	
 		<!-- 1861-1920 -->
-		<div style="padding-top:6px;padding-bottom:6px;">
+		<div style="padding-bottom:6px;">
 			<a href="#1861-1920" class="data" data-toggle="collapse">1861-1920</a>
 			<div id="1861-1920" class="collapse">
 				<div class="panel-group">
@@ -689,7 +919,7 @@
 			</div>
 		</div>
 		<!-- 1921-1980 -->
-		<div style="padding-top:6px;padding-bottom:6px;">
+		<div style="padding-bottom:6px;">
 			<a href="#1921-1980" class="data" data-toggle="collapse">1921-1980</a>
 			<div id="1921-1980" class="collapse">
 				<div class="panel-group">
@@ -811,7 +1041,7 @@
 			</div>
 		</div>
 		<!-- 1981-Today -->
-		<div style="padding-top:6px;padding-bottom:6px;">
+		<div style="padding-bottom:0px;">
 			<a href="#1981-today" class="data" data-toggle="collapse">1981-Today</a>
 			<div id="1981-today" class="collapse">
 				<div class="panel-group">
@@ -842,17 +1072,16 @@
 			</div>
 		</div>
 		
-		<br>
-		<hr>
-		<br>
-		
 		<!-- Credits -->
 		<div>
-			<div style="margin-left:50px;">Some useful links for class:</div>
+			<br>
+			<hr>
+			<br>
+			<div class="rare">Some useful links for class:</div>
 			<a href="https://drive.google.com/open?id=19PrTEx2QeTG6b4_YXuMczs9BRPkLCa3ro55bXB2P-KM" target="_blank">HAPPy Document Analysis</a>
 			<br/>
 			<a href="https://drive.google.com/open?id=1yZ9X9tAm78Jpem71xL_WeleJWr9iJCCQlIdvoZ6flRc" target="_blank">Supreme Court Case Analysis</a>
-			<div style="margin-left:50px;">Some useful youtubers:</div>
+			<div class="rare">Some useful youtubers:</div>
 			<a href="https://www.youtube.com/user/JoczProductions" target="_blank">JoczProductions</a>
 			<br/>
 			<a href="https://www.youtube.com/channel/UC223Rd7yCfDo9fv6ENdNp9Q" target="_blank">Adam Norris</a>
@@ -860,7 +1089,7 @@
 			<br/>
 			<a href="https://apcentral.collegeboard.org/courses/ap-united-states-history/exam" target="_blank">College Board Overview</a>
 			<br/>
-			<div style="margin-left:50px;">If something is wrong or missing, contact me at: <a href style="margin-left:0px">nguardadoguardo@gmail.com</a></div>
+			<div class="rare">If something is wrong or missing, contact me at: <a href style="margin-left:0px">nguardadoguardo@gmail.com</a></div>
 		</div>
 		
 	</body>
