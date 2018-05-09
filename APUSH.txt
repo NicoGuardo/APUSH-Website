@@ -1,11 +1,9 @@
 Daily Review:
--Charles Sumner
--Stephen Douglas
--Thomas Jefferson
 -Battle of Trenton
 -Second Great Awakening
 -Shay's Rebellion
 -Whiskey Rebellion
+-Bacon's Rebellion
 -Federalists vs Democratic-Republicans
 -Big Stick Diplomacy/Roosevelt Corollary
 -Progessive Era Amendments
@@ -13,9 +11,12 @@ Daily Review:
 -What did Wilson say was the reason for entering war?
 -Labor union membership in the 1920s
 -New Deal Programs
--John C. Calhoun
 -Rationing during WWII
 -Populists and Progressives
+-Charles Sumner
+-Stephen Douglas
+-Thomas Jefferson
+-John C. Calhoun
 -John Marshall
 -William Jennings Bryan
 -Eugene V. Debs
@@ -23,20 +24,19 @@ Daily Review:
 -John Jay
 -Battle of Athens
 -yalta, potsdam,
--Utopian societies
--Dred Scott, Plessy Ferguson, Brown v Board, Roe v Wade
+-Utopian societies, Muckrakers
 -Mathew Perry and his book
 -American Party or Know-Nothing Party, Whigs, Socialists, Populists, Progressives, Free-soil party
 
 Important Dates:
+- Lincoln and Douglas debates in 1858
 - Alger Hiss and Richard Nixon
-- Pendleton Acts
-- Missouri Compromise
+- Pendleton Acts 
+- Stamp Act (1765)
 - King Philip's War from 1675-1678
 - Parliament passed Intolerable Acts in 1774
 - Shays’ Rebellion protests in 1786 and 1787
 - Whiskey Rebellion protests from 1791 and 1794
-- Nat Turner slave rebellion
 - Pinckey Treaty of 1795
 - Panic of 1873
 - Federal-Aid Highway Act of 1956
@@ -57,6 +57,10 @@ Major Wars in American History:
 
 Important Court Cases:
 - Marbury v. Madison (1803)
+- Dred Scott
+- Plessy Ferguson
+- Brown v Board
+- Roe v Wade
 
 Major Eras in American History:
 1492-1763 - Exploration & Colonization
